@@ -7,6 +7,7 @@ import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 import FileController from './app/controllers/FileController';
 import PatientController from './app/controllers/PatientController';
+import AppointmentController from './app/controllers/AppointmentController';
 
 import authMiddleware from './app/middleware/auth';
 
@@ -28,5 +29,9 @@ routes.get('/patients', PatientController.index);
 routes.post('/patients', PatientController.store);
 routes.put('/patients/:id', PatientController.update);
 routes.delete('/patients/:id', PatientController.delete);
+
+routes.get('/appointment', AppointmentController.index);
+routes.post('/appointment', AppointmentController.store);
+routes.put('/appointment/:id', AppointmentController.update);
 
 export default routes;

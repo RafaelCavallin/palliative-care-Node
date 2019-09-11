@@ -51,9 +51,10 @@ class PatientController {
 
     const patient = await Patient.create(req.body);
 
-    const { name, medical_record, borned, contact, service } = patient;
+    const { id, name, medical_record, borned, contact, service } = patient;
 
     return res.json({
+      id,
       name,
       medical_record,
       borned,

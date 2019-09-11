@@ -7,7 +7,7 @@ import Appointment from '../app/models/Appointment';
 
 import databaseConfig from '../config/database';
 
-const models = [User, File, Patient, Appointment];
+const models = [User, File, Appointment, Patient];
 
 class Database {
   constructor() {
